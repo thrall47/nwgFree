@@ -129,7 +129,7 @@ class DrawerActivity : AppCompatActivity() {
     private fun popUpMenu() {
         var popUpMenu: Button = findViewById(R.id.ham_menu)
         popUpMenu.startAnimation(AnimationUtils.loadAnimation(popUpMenu.context, R.anim.bounce))
-        supportActionBar?.title = ""
+        supportActionBar
         popUpMenu.setOnClickListener {
 
 //            val menu = PopupMenu(this, popUpMenu)
