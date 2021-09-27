@@ -164,6 +164,23 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
 
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/donate"
+        android:text="Donate"
+        android:textColor="#ffffff"
+        android:shadowColor="#7F0303"
+        android:shadowDy="5"
+        android:shadowRadius="20"
+        android:shadowDx="5"
+        android:textSize="20sp"
+        android:fontFamily="@font/skita"
+        app:layout_constraintEnd_toEndOf="@+id/meDiscord"
+        app:layout_constraintStart_toStartOf="@+id/contactMe"
+        app:layout_constraintTop_toBottomOf="@+id/contactMe"
+        android:background="@drawable/button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+
     <ImageButton
         android:id="@+id/meDiscord"
         android:src="@drawable/ic_discord"

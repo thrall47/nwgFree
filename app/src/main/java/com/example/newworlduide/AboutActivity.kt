@@ -28,7 +28,16 @@ class AboutActivity : AppCompatActivity() {
 
         shadyDiscord()
 
+        donate()
+    }
 
+    private fun donate() {
+        val donate: Button = findViewById(R.id.donate)
+        donate.setOnClickListener {
+            val intent = Intent(Intent.ACTION_VIEW)
+            intent.data = Uri.parse("https://www.paypal.com/paypalme/tokewartooth")
+            startActivity(intent)
+            donate.startAnimation(AnimationUtils.loadAnimation(this, R.anim.bounce))}
     }
 
     private fun shadyDiscord() {
@@ -82,10 +91,9 @@ class AboutActivity : AppCompatActivity() {
 
     private fun backBtnClickk() {
         val back: Button = findViewById(R.id.backBtnFromAbout)
-        var i = Intent(this, DrawerActivity::class.java)
         back.setOnClickListener {
             back.startAnimation(AnimationUtils.loadAnimation(this, R.anim.bounce))
-            startActivity(i)
+            finish()
         }
     }
 
@@ -94,11 +102,11 @@ class AboutActivity : AppCompatActivity() {
         super.onPause()
     }
 
-    override fun onBackPressed() {
-        var i = Intent(this, DrawerActivity::class.java)
-        startActivity(i)
-        super.onBackPressed()
-    }
+//    override fun onBackPressed() {
+//        var i = Intent(this, DrawerActivity::class.java)
+//        startActivity(i)
+//        super.onBackPressed()
+//    }
 
 
 }

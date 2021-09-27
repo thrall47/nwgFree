@@ -15,26 +15,9 @@ android {
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
-
-    flavorDimensions"dev"
-    productFlavors{
-        free{
-            dimension "dev"
-            applicationIdSuffix ".free"
-        }
-        paid{
-            dimension "dev"
-            applicationIdSuffix ".paid"
-        }
-    }
     buildTypes {
         release {
             minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-        }
-        custonDebug{
-            initWith debug
-            applicationIdSuffix ".customDebug"
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }

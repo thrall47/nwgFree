@@ -367,15 +367,15 @@ class DrawerActivity : AppCompatActivity() {
     }
 
     override fun onResume() {
-        mp?.pause()
         mp?.start()
+        loadNews()
         super.onResume()
     }
 
-//    override fun onPause() {
-//        finish()
-//        super.onPause()
-//    }
+    override fun onPause() {
+        mp?.pause()
+        super.onPause()
+    }
 
 
 }

@@ -521,6 +521,7 @@ class DataBaseActivity : AppCompatActivity() {
 
     override fun onPause() {
         finish()
+        mp?.pause()
         super.onPause()
     }
 

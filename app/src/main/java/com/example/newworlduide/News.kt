@@ -20,7 +20,7 @@ class Article {
 
     var title: String = ""
 
-//    var language: String = ""
+    var language: String = ""
 //
 //    var source: String = ""
 

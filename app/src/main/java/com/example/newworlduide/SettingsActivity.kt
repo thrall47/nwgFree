@@ -17,8 +17,39 @@ class SettingsActivity : AppCompatActivity() {
 
         mute()
 
+        language()
 
+    }
 
+    private fun language() {
+        val rgM: RadioGroup = findViewById(R.id.rg3)
+        rgM.setOnCheckedChangeListener { group, checkedId ->
+            if (checkedId == R.id.English) {
+                changeLanguage("${null}")
+                var i = Intent(this, DrawerActivity::class.java)
+                i.putExtra("language", "${null}")
+            }
+            if (checkedId == R.id.Deutsch){
+                changeLanguage("DE")
+                var i = Intent(this, DrawerActivity::class.java)
+                i.putExtra("language", "DE")
+            }
+            if (checkedId == R.id.French){
+                changeLanguage("FR")
+                var i = Intent(this, DrawerActivity::class.java)
+                i.putExtra("language", "FR")
+            }
+        }
+        val pref = getSharedPreferences("settings", MODE_PRIVATE)
+        val size = pref.getString("language", "${null}")
+        when (size) {
+            "${null}" -> rgM.check(R.id.English)
+            "DE" -> rgM.check(R.id.Deutsch)
+            "FR" -> rgM.check(R.id.French)
+        }
+        if (size == "${null}"){
+            rgM.check(R.id.English)
+        }
     }
 
     private fun mute() {
@@ -55,7 +86,7 @@ class SettingsActivity : AppCompatActivity() {
                 changeSource("website-news")
                 back.setOnClickListener {
                     back.startAnimation(AnimationUtils.loadAnimation(this, R.anim.bounce))
-                    startActivityForResult(i, 1) }
+                    onBackPressed() }
             }
             if (checkedId == R.id.Twitter) {
                 var i = Intent(this, DrawerActivity::class.java)
@@ -63,7 +94,7 @@ class SettingsActivity : AppCompatActivity() {
                 changeSource("twitter")
                 back.setOnClickListener {
                     back.startAnimation(AnimationUtils.loadAnimation(this, R.anim.bounce))
-                    startActivityForResult(i, 2) }
+                    onBackPressed() }
             }
             if (checkedId == R.id.Reddit) {
                 var i = Intent(this, DrawerActivity::class.java)
@@ -71,7 +102,7 @@ class SettingsActivity : AppCompatActivity() {
                 changeSource("reddit")
                 back.setOnClickListener {
                     back.startAnimation(AnimationUtils.loadAnimation(this, R.anim.bounce))
-                    startActivityForResult(i, 3) }
+                    onBackPressed() }
             }
 
         }
@@ -96,7 +127,13 @@ class SettingsActivity : AppCompatActivity() {
         pref.apply()
     }
 
-//    fun changeFont(font: String){
+    fun changeLanguage(language: String){
+        val pref = getSharedPreferences("settings", MODE_PRIVATE).edit()
+        pref.putString("language", language)
+        pref.apply()
+    }
+
+    //    fun changeFont(font: String){
 //        val pref = getSharedPreferences("settings", MODE_PRIVATE).edit()
 //        pref.putString("font", font)
 //        pref.apply()
@@ -106,11 +143,11 @@ class SettingsActivity : AppCompatActivity() {
         super.onPause()
     }
 
-    override fun onBackPressed() {
-        var i = Intent(this, DrawerActivity::class.java)
-        startActivity(i)
-        super.onBackPressed()
-    }
+//    override fun onBackPressed() {
+//        var i = Intent(this, DrawerActivity::class.java)
+//        startActivity(i)
+//        super.onBackPressed()
+//    }
 
 
 

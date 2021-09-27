@@ -114,6 +114,7 @@ class BuildsActivity : AppCompatActivity() {
 
     override fun onPause() {
         finish()
+        mp?.pause()
         super.onPause()
     }
 
