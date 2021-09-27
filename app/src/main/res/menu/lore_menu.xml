@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="New World Lore Intro"
+        android:id="@+id/nwli"/>
+    <item
+        android:title="The Ancients"
+        android:id="@+id/tas"/>
+    <item
+        android:title="The Corruption"
+        android:id="@+id/tcn"/>
+    <item
+        android:title="The Obelisks"
+        android:id="@+id/tols"/>
+
+</menu>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="Amrine Excavation Guide"
+        android:id="@+id/axg"/>
+    <item
+        android:title="Dynasty Shipyard"
+        android:id="@+id/dsy"/>
+    <item
+        android:title="Starstone Barrows"
+        android:id="@+id/ssb"/>
+    <item
+        android:title="The Depths"
+        android:id="@+id/tds"/>
+
+</menu>

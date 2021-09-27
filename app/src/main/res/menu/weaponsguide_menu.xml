@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="Bow"
+        android:id="@+id/bowG"/>
+    <item
+        android:title="Fire Staff"
+        android:id="@+id/fsG"/>
+    <item
+        android:title="Great Axe"
+        android:id="@+id/gag"/>
+    <item
+        android:title="Hatchet"
+        android:id="@+id/hatchetG"/>
+    <item
+        android:title="Ice Gauntlet"
+        android:id="@+id/iegag"/>
+    <item
+        android:title="Life Staff"
+        android:id="@+id/lesG"/>
+    <item
+        android:title="Musket"
+        android:id="@+id/muskG"/>
+    <item
+        android:title="Repair"
+        android:id="@+id/repairG"/>
+    <item
+        android:title="Spear"
+        android:id="@+id/spearG"/>
+    <item
+        android:title="Sword and Shield"
+        android:id="@+id/sasG"/>
+    <item
+        android:title="War Hammer"
+        android:id="@+id/whG"/>
+
+</menu>

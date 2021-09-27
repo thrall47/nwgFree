@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="Arcana Guide"
+        android:id="@+id/arcanaGuide"/>
+    <item
+        android:title="Cooking Guide"
+        android:id="@+id/cookingGuide"/>
+
+</menu>

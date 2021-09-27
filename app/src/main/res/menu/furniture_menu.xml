@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="All"
+        android:id="@+id/all"/>
+    <item
+        android:title="Beds"
+        android:id="@+id/Beds"/>
+    <item
+        android:title="Chairs"
+        android:id="@+id/Chairs"/>
+    <item
+        android:title="Decorations"
+        android:id="@+id/Decorations"/>
+    <item
+        android:title="Lighting"
+        android:id="@+id/Lighting"/>
+    <item
+        android:title="Misc"
+        android:id="@+id/Misc"/>
+    <item
+        android:title="Pets"
+        android:id="@+id/Pets"/>
+    <item
+        android:title="Shelves "
+        android:id="@+id/Shelves"/>
+    <item
+        android:title="Storage"
+        android:id="@+id/Storage"/>
+    <item
+        android:title="Tables"
+        android:id="@+id/Tables"/>
+    <item
+        android:title="Trophies"
+        android:id="@+id/Trophies"/>
+    <item
+        android:title="Vegetation"
+        android:id="@+id/Vegetation"/>
+
+
+</menu>

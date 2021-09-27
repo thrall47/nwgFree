@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="All"
+        android:id="@+id/all"/>
+    <item
+        android:title="Camp"
+        android:id="@+id/Camp"/>
+    <item
+        android:title="Arcana"
+        android:id="@+id/Arcana"/>
+    <item
+        android:title="Armoring"
+        android:id="@+id/Armoring"/>
+    <item
+        android:title="Cooking"
+        android:id="@+id/Cooking"/>
+    <item
+        android:title="Engineering"
+        android:id="@+id/Engineering"/>
+    <item
+        android:title="Furnishing"
+        android:id="@+id/Furnishing"/>
+    <item
+        android:title="Jewelcrafting "
+        android:id="@+id/Jewelcrafting"/>
+    <item
+        android:title="Weaponsmithing"
+        android:id="@+id/Weaponsmithing"/>
+    <item
+        android:title="Leatherworking"
+        android:id="@+id/Leatherworking"/>
+    <item
+        android:title="Smelting"
+        android:id="@+id/Smelting"/>
+    <item
+        android:title="Stonecutting"
+        android:id="@+id/Stonecutting"/>
+    <item
+        android:title="Weaving"
+        android:id="@+id/Weaving"/>
+    <item
+        android:title="Woodworking"
+        android:id="@+id/Woodworking"/>
+
+
+</menu>

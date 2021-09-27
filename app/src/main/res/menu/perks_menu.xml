@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="All"
+        android:id="@+id/all"/>
+    <item
+        android:title="Armor"
+        android:id="@+id/ArmorP"/>
+    <item
+        android:title="Weapon"
+        android:id="@+id/WeaponP"/>
+    <item
+        android:title="Jewelry"
+        android:id="@+id/JewelryP"/>
+    <item
+        android:title="Amulet"
+        android:id="@+id/Amulet"/>
+    <item
+        android:title="Earring"
+        android:id="@+id/Earring"/>
+    <item
+        android:title="Ring"
+        android:id="@+id/Ring"/>
+    <item
+        android:title="Bag "
+        android:id="@+id/Bag"/>
+    <item
+        android:title="Tool"
+        android:id="@+id/Tool"/>
+    <item
+        android:title="FishingPool"
+        android:id="@+id/FishingPool"/>
+    <item
+        android:title="Sword"
+        android:id="@+id/SwordP"/>
+    <item
+        android:title="Shield"
+        android:id="@+id/ShieldP"/>
+    <item
+        android:title="Hatchet"
+        android:id="@+id/Hatchet"/>
+    <item
+        android:title="Repair"
+        android:id="@+id/Repair"/>
+    <item
+        android:title="Great Axe"
+        android:id="@+id/Greataxe"/>
+    <item
+        android:title="War Hammer"
+        android:id="@+id/Warhammer"/>
+    <item
+        android:title="Spear"
+        android:id="@+id/Spear"/>
+    <item
+        android:title="Bow"
+        android:id="@+id/Bow"/>
+    <item
+        android:title="Musket"
+        android:id="@+id/Musket"/>
+    <item
+        android:title="Fire Sttaf"
+        android:id="@+id/Firesttaf"/>
+    <item
+        android:title="Life Staff"
+        android:id="@+id/Lifestaff"/>
+    <item
+        android:title="Ice Staff"
+        android:id="@+id/Icestaff"/>
+
+
+</menu>

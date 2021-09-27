@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="All"
+        android:id="@+id/all"/>
+    <item
+        android:title="Armor"
+        android:id="@+id/Armor"/>
+    <item
+        android:title="Weapon"
+        android:id="@+id/Weapon"/>
+    <item
+        android:title="Jewelry"
+        android:id="@+id/Jewelry"/>
+
+
+
+</menu>

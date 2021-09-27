@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <item
+            android:title="All"
+            android:id="@+id/all"/>
+        <item
+            android:title="Ammo"
+            android:id="@+id/ammo"/>
+        <item
+            android:title="Armor"
+            android:id="@+id/armor"/>
+        <item
+            android:title="Consumable"
+            android:id="@+id/consumable"/>
+        <item
+            android:title="Resource"
+            android:id="@+id/resource"/>
+        <item
+            android:title="Weapon"
+            android:id="@+id/weapon"/>
+
+
+</menu>

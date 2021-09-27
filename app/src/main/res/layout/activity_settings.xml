@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/settings"
+    tools:context=".SettingsActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_settings"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/button"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+        <TextView
+            android:text="Settings"
+            android:layout_gravity="start"
+            android:layout_marginBottom="20dp"
+            android:textColor="#827D7D"
+            android:shadowColor="#7F0303"
+            android:shadowDy="5"
+            android:shadowRadius="20"
+            android:shadowDx="5"
+            android:textSize="30sp"
+            android:fontFamily="@font/skita"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/settingsLogo"
+            android:clickable="true"
+            android:layout_gravity="center"
+            android:src="@drawable/icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/backBtnFromSettings"
+            android:layout_marginEnd="25dp"
+            android:layout_gravity="end"
+            android:text="Apply"
+            android:textColor="#827D7D"
+            android:shadowColor="#7F0303"
+            android:shadowDy="5"
+            android:shadowRadius="20"
+            android:shadowDx="5"
+            android:textSize="25sp"
+            android:fontFamily="@font/skita"
+            android:background="@drawable/button"
+            android:layout_width="110dp"
+            android:layout_height="40dp"/>
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <RadioGroup
+        android:id="@+id/rg"
+        android:layout_marginStart="18dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_settings">
+
+        <TextView
+            android:text="Change News Source"
+            android:textColor="#957F7F"
+            android:shadowColor="#7F0303"
+            android:shadowDy="5"
+            android:shadowDx="5"
+            android:shadowRadius="20"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <RadioButton
+            android:id="@+id/Website"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#827D7D"
+            android:shadowColor="#7F0303"
+            android:shadowDy="5"
+            android:shadowRadius="20"
+            android:shadowDx="5"
+            android:textSize="20sp"
+            android:fontFamily="@font/skita"
+            android:text="New World's Website"/>
+
+        <RadioButton
+            android:id="@+id/Twitter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#827D7D"
+            android:shadowColor="#7F0303"
+            android:shadowDy="5"
+            android:shadowRadius="20"
+            android:shadowDx="5"
+            android:textSize="20sp"
+            android:fontFamily="@font/skita"
+            android:text="Twitter"/>
+
+        <RadioButton
+            android:id="@+id/Reddit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#827D7D"
+            android:shadowColor="#7F0303"
+            android:shadowDy="5"
+            android:shadowRadius="20"
+            android:shadowDx="5"
+            android:textSize="20sp"
+            android:fontFamily="@font/skita"
+            android:text="Reddit"/>
+
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/rg2"
+        android:layout_marginStart="18dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rg">
+
+        <TextView
+            android:text="Turn off music"
+            android:textColor="#957F7F"
+            android:shadowColor="#7F0303"
+            android:shadowDy="5"
+            android:shadowDx="5"
+            android:shadowRadius="20"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <RadioButton
+            android:id="@+id/musicOn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#827D7D"
+            android:shadowColor="#7F0303"
+            android:shadowDy="5"
+            android:shadowRadius="20"
+            android:shadowDx="5"
+            android:textSize="20sp"
+            android:fontFamily="@font/skita"
+            android:text="Music On"/>
+
+        <RadioButton
+            android:id="@+id/musicOff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#827D7D"
+            android:shadowColor="#7F0303"
+            android:shadowDy="5"
+            android:shadowRadius="20"
+            android:shadowDx="5"
+            android:textSize="20sp"
+            android:fontFamily="@font/skita"
+            android:text="Music Off"/>
+
+
+    </RadioGroup>
+
+
+
+
+    <ImageView
+        android:id="@+id/newIcon"
+        app:layout_constraintTop_toTopOf="@id/rg"
+
+        app:layout_constraintStart_toEndOf="@id/rg"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="10dp"
+        android:src="@drawable/ic_new_world"
+        android:layout_width="40dp"
+        android:layout_height="40dp"/>
+
+    <ImageView
+        android:id="@+id/twIcon"
+        app:layout_constraintTop_toBottomOf="@+id/newIcon"
+        app:layout_constraintStart_toEndOf="@id/rg"
+        app:layout_constraintEnd_toEndOf="@id/rg"
+        app:layout_constraintStart_toStartOf="@id/rg"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="10dp"
+        android:src="@drawable/ic_twitter"
+        android:layout_width="40dp"
+        android:layout_height="40dp"/>
+
+    <ImageView
+        android:id="@+id/redIcon"
+        app:layout_constraintTop_toBottomOf="@+id/twIcon"
+        app:layout_constraintStart_toEndOf="@id/rg"
+        app:layout_constraintEnd_toEndOf="@id/rg"
+        app:layout_constraintStart_toStartOf="@id/rg"
+        android:layout_marginEnd="10dp"
+        android:src="@drawable/ic_reddit"
+        android:layout_width="60dp"
+        android:layout_height="60dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

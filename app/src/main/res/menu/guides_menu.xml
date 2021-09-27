@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="Ultimate Beginner Guide"
+        android:id="@+id/ubg"/>
+    <item
+        android:title="Armor Guide"
+        android:id="@+id/ag"/>
+    <item
+        android:title="Banking &amp; Storage System "
+        android:id="@+id/bss"/>
+    <item
+        android:title="Camp Guide"
+        android:id="@+id/campG"/>
+    <item
+        android:title="Character Progression"
+        android:id="@+id/cp"/>
+    <item
+        android:title="Consumable "
+        android:id="@+id/consumableG"/>
+    <item
+        android:title="Corrupted Breach Guide"
+        android:id="@+id/cbg"/>
+    <item
+        android:title="Early Leveling Guide"
+        android:id="@+id/elg"/>
+    <item
+        android:title="Faction Guide"
+        android:id="@+id/fg"/>
+    <item
+        android:title="Fast Travel Guide"
+        android:id="@+id/ftg"/>
+    <item
+        android:title="Gathering Guide"
+        android:id="@+id/gg"/>
+    <item
+        android:title="Hemp and Fiber Guide"
+        android:id="@+id/hfg"/>
+    <item
+        android:title="Housing Guide"
+        android:id="@+id/hg"/>
+    <item
+        android:title="Salvage and Repair Guide"
+        android:id="@+id/srg"/>
+    <item
+        android:title="Territories &amp; Settlers"
+        android:id="@+id/tsg"/>
+    <item
+        android:title="Weapon Skill Trees"
+        android:id="@+id/wst"/>
+
+
+
+</menu>
