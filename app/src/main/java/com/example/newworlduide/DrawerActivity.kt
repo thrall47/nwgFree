@@ -120,6 +120,13 @@ class DrawerActivity : AppCompatActivity() {
     }
 
 
+    fun noAds(view: View) {
+        val intent = Intent(Intent.ACTION_VIEW)
+        intent.data = Uri.parse("market://details?id=com.nwg.newworlduidepro")
+        view.startAnimation(AnimationUtils.loadAnimation(this, R.anim.bounce))
+        startActivity(intent)
+    }
+
     private fun backgroundMusic() {
         mp = MediaPlayer.create(this@DrawerActivity, R.raw.soundtrack)
         mp?.start()
@@ -151,7 +158,7 @@ class DrawerActivity : AppCompatActivity() {
                                 if (adCounter % 3 == 0){
                                     startActivity(i)
                                     val handler = Handler(Looper.getMainLooper())
-                                    handler.postDelayed({ mInterstitialAd?.show(this@DrawerActivity) }, 100) }
+                                    handler.postDelayed({ mInterstitialAd?.show(this@DrawerActivity) }, 50) }
                                 mInterstitialAd?.fullScreenContentCallback = object : FullScreenContentCallback() {
                                     override fun onAdDismissedFullScreenContent() {
                                         startActivity(i)}
@@ -171,7 +178,7 @@ class DrawerActivity : AppCompatActivity() {
                                 if (adCounterGD % 3 == 0){
                                     startActivity(i)
                                     val handler = Handler(Looper.getMainLooper())
-                                    handler.postDelayed({ mInterstitialAdGD?.show(this@DrawerActivity) }, 100) }
+                                    handler.postDelayed({ mInterstitialAdGD?.show(this@DrawerActivity) }, 50) }
                                 mInterstitialAdGD?.fullScreenContentCallback = object : FullScreenContentCallback() {
                                     override fun onAdDismissedFullScreenContent() {
                                         startActivity(i)}
@@ -190,7 +197,7 @@ class DrawerActivity : AppCompatActivity() {
                                 if (adCounterBD % 3 == 0){
                                     startActivity(i)
                                     val handler = Handler(Looper.getMainLooper())
-                                    handler.postDelayed({ mInterstitialAdBD?.show(this@DrawerActivity) }, 100) }
+                                    handler.postDelayed({ mInterstitialAdBD?.show(this@DrawerActivity) }, 50) }
                                 mInterstitialAdBD?.fullScreenContentCallback = object : FullScreenContentCallback() {
                                     override fun onAdDismissedFullScreenContent() {
                                         startActivity(i)}
@@ -209,7 +216,7 @@ class DrawerActivity : AppCompatActivity() {
                                 if (adCounterMP % 3 == 0){
                                     startActivity(i)
                                     val handler = Handler(Looper.getMainLooper())
-                                    handler.postDelayed({ mInterstitialAdMP?.show(this@DrawerActivity) }, 100) }
+                                    handler.postDelayed({ mInterstitialAdMP?.show(this@DrawerActivity) }, 50) }
                                 mInterstitialAdMP?.fullScreenContentCallback = object : FullScreenContentCallback() {
                                     override fun onAdDismissedFullScreenContent() {
                                         startActivity(i)}
@@ -376,6 +383,8 @@ class DrawerActivity : AppCompatActivity() {
         mp?.pause()
         super.onPause()
     }
+
+
 
 
 }
